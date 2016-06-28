@@ -1,0 +1,6 @@
+use_frameworks!
+target 'PGSDK_Tests' do
+  pod 'PGSDK', :path => '../'
+  
+  
+end
