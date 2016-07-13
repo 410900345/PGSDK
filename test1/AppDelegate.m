@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
+#import "MyBundleDetailViewController.h"
+//#import <JSPatch/JSPatch.h>
+#import "IndexVC.h"
 
 @implementation AppDelegate
 
@@ -14,6 +18,33 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    IndexVC *mvc = [[MyBundleDetailViewController alloc]init];
+    UINavigationController *nav= [[UINavigationController alloc]initWithRootViewController:mvc];
+    self.window.rootViewController =nav;
+    
+//    [JSPatch startWithAppKey:@"64d67fd83adf60e8"];
+//    [JSPatch sync];
+//    [JSPatch setLogger:^(NSString *msg) {
+//        //msg 是 JSPatch log 字符串，用你自定义的logger打出
+//        YOUR_APP_LOG(@"%@", msg);
+//    }];
+//    NSInteger today = -2;
+//    NSString *todayStr = [arrayProgress[i] stringValue];
+//    NSInteger todayOo = labs(today);
+//    NSLog(@"-----%ld",todayOo);
+    
+    NSInteger cellNum = 5;
+    NSInteger wordCount = 2000;
+    NSMutableSet *idstrings = [[NSMutableSet alloc] init];
+    while (idstrings.count < cellNum)
+    {
+        NSInteger randomInt = arc4random() % wordCount;
+        [idstrings addObject:@(randomInt)];
+    }
+    NSArray *returnArray = [idstrings allObjects];
+    
+    NSString *idString = [returnArray componentsJoinedByString:@","];
+    NSLog(@"----%@------%@",idstrings),returnArray;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
