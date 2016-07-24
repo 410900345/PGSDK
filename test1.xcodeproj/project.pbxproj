@@ -17,6 +17,8 @@
 		750B1DA01BA342C300B6BE3B /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		750B1DA21BA342C300B6BE3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75EE212C1914B46F009FAC3F /* InfoPlist.strings */; };
 		750B1DA31BA342C300B6BE3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EE21351914B46F009FAC3F /* Images.xcassets */; };
+		753E0CCB1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx in Resources */ = {isa = PBXBuildFile; fileRef = 753E0CCA1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx */; };
+		753E0CCC1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx in Resources */ = {isa = PBXBuildFile; fileRef = 753E0CCA1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx */; };
 		755803F71D12CC460066336E /* newNce.json in Resources */ = {isa = PBXBuildFile; fileRef = 755803F61D12CC460066336E /* newNce.json */; };
 		755803F91D12CFA30066336E /* nce1.json in Resources */ = {isa = PBXBuildFile; fileRef = 755803F81D12CFA30066336E /* nce1.json */; };
 		757F714C1CCB83FC006AE964 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757F714B1CCB83FC006AE964 /* JavaScriptCore.framework */; };
@@ -65,6 +67,7 @@
 		54ABFF5A2F0EF7A6C794774F /* Pods-test1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test1.release.xcconfig"; path = "Pods/Target Support Files/Pods-test1/Pods-test1.release.xcconfig"; sourceTree = "<group>"; };
 		750B1DA81BA342C300B6BE3B /* test1 copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test1 copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750B1DA91BA342C300B6BE3B /* test1 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test1 copy-Info.plist"; path = "/Users/yangshuo/Desktop/test1/test1 copy-Info.plist"; sourceTree = "<absolute>"; };
+		753E0CCA1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx"; sourceTree = "<group>"; };
 		755803F61D12CC460066336E /* newNce.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newNce.json; sourceTree = "<group>"; };
 		755803F81D12CFA30066336E /* nce1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = nce1.json; path = CocoaSecurity/nce1.json; sourceTree = "<group>"; };
 		757F714B1CCB83FC006AE964 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -151,6 +154,7 @@
 		75A876291CFC7ED400CB876D /* myBundle */ = {
 			isa = PBXGroup;
 			children = (
+				753E0CCA1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx */,
 				75A8762A1CFC7ED400CB876D /* MyBundleDetailViewController.h */,
 				75A8762B1CFC7ED400CB876D /* MyBundleDetailViewController.m */,
 				75A8762C1CFC7ED400CB876D /* pic */,
@@ -386,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				750B1DA21BA342C300B6BE3B /* InfoPlist.strings in Resources */,
+				753E0CCC1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx in Resources */,
 				750B1DA31BA342C300B6BE3B /* Images.xcassets in Resources */,
 				75BF72E21C55205200608FFC /* ybvam1.Mp4 in Resources */,
 				75BF72E51C55210C00608FFC /* ybvam11.env in Resources */,
@@ -397,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				755803F91D12CFA30066336E /* nce1.json in Resources */,
+				753E0CCB1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx in Resources */,
 				75EE212E1914B46F009FAC3F /* InfoPlist.strings in Resources */,
 				75A876361CFC7ED400CB876D /* pointer2.png in Resources */,
 				75EE21361914B46F009FAC3F /* Images.xcassets in Resources */,
