@@ -8,6 +8,9 @@
 
 #import "MyBundleDetailViewController.h"
 #import "Gauge.h"
+#import "WordModel.h"
+
+
 
 @interface MyBundleDetailViewController ()
 
@@ -66,40 +69,131 @@
     
     NSMutableDictionary *wordDict = [[NSMutableDictionary alloc] init];
     for (NSString  *word in arryKyword ){
-        [wordDict setObject:@0 forKey:word];
+        WordModel *model = [[WordModel alloc] init];
+        [wordDict setObject:model forKey:word];
     }
     for (NSArray *dict in rootDict) {
         NSString *str = dict[0];
+         NSString *strIndex = [dict[1] stringByReplacingOccurrencesOfString:@"" withString:@"#-0"];
+        NSInteger starIndex = [strIndex integerValue];
+         NSUInteger strStar = [dict[2] integerValue];
+        
         for (NSString *subStr in arryKyword) {
             if ([str containsString:subStr]){
-                NSInteger num = [wordDict[subStr] integerValue];
+                WordModel *model = wordDict[subStr];
+                NSInteger num = [model.wordCount integerValue];
                 num ++;
-                [wordDict setObject:@(num) forKey:subStr];
+                model.wordCount = @(num);
+                if (starIndex <= 10 && strStar >= 4605) {
+                    NSInteger numStar = [model.wordStarCount integerValue];
+                    numStar ++;
+                    model.wordStarCount = @(numStar);
+                }
+//                [wordDict setObject:[NSNumber numberWithInteger:num] forKey:subStr];
             }
         }
     }
     
+//   NSArray *sortArry =  [wordDict keysSortedByValueUsingSelector:@selector(compare:)];
+    
+     NSArray *myArray = [wordDict keysSortedByValueUsingComparator: ^(WordModel *obj1, WordModel *obj2) {
+        
+        if ([obj1.wordCount integerValue] > [obj2.wordCount integerValue]) {
+            
+            return (NSComparisonResult)NSOrderedAscending;
+        }
+        if ([obj1.wordCount integerValue] < [obj2.wordCount integerValue]) {
+            
+            return (NSComparisonResult)NSOrderedDescending;
+        }
+        
+        return (NSComparisonResult)NSOrderedSame;
+    }];
+    
     NSMutableArray *numArray = [NSMutableArray array];
-    for (NSString *subStr in arryKyword) {
-        NSInteger num = [wordDict[subStr] integerValue];
-        [numArray addObject:@(num)];
-//      NSLog(@"-----%@-----%ld ",subStr,num);
+     NSMutableArray *numArrayStar = [NSMutableArray array];
+    for (NSString *subStr in myArray) {
+        
+        WordModel *model = wordDict[subStr];
+        NSInteger num = [model.wordCount integerValue];
+        [numArray addObject:[NSNumber numberWithInteger:num]];
+        [numArrayStar addObject:model.wordStarCount];
+        //      NSLog(@"-----%@-----%ld ",subStr,num);
     }
-    NSLog(@"-----%@ ",arryKyword);
+//    NSLog(@"-----%@ ",arryKyword);
     NSLog(@"-----%@- ",numArray);
+//     NSLog(@"-----%@- ",sortArry);
+     NSLog(@"-----%@- ",myArray);
+     NSLog(@"-----%@- ",numArrayStar);
+}
+
+- (void)testSorts {
+    NSDictionary *myDict = @{
+                                  @"A" :  [NSNumber numberWithInt:63],
+                                  @"B" : [NSNumber numberWithInt:72],
+                                  @"C" : [NSNumber numberWithInt:55],
+                                  @"D" : [NSNumber numberWithInt:49]};
+
+    NSDictionary *dictionary; // initialize dictionary
+    NSArray *sorted = [[dictionary allKeys] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return [[dictionary objectForKey:obj1] compare:[dictionary objectForKey:obj2]];
+//        return  [obj1 integerValue] < [obj2 integerValue];
+    }];
+    
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                          [NSNumber numberWithInt:63], @"Mathematics",
+                          [NSNumber numberWithInt:72], @"English",
+                          [NSNumber numberWithInt:55], @"History",
+                          [NSNumber numberWithInt:49], @"Geography",
+                          nil];
+    
+    NSArray *sortedKeysArray =
+    [myDict keysSortedByValueUsingSelector:@selector(compare:)];
+    
+    NSArray *myArray;
+    
+    myArray = [dict keysSortedByValueUsingComparator: ^(id obj1, id obj2) {
+        
+        if ([obj1 integerValue] > [obj2 integerValue]) {
+            
+            return (NSComparisonResult)NSOrderedDescending;
+        }
+        if ([obj1 integerValue] < [obj2 integerValue]) {
+            
+            return (NSComparisonResult)NSOrderedAscending;
+        }
+        
+        return (NSComparisonResult)NSOrderedSame;
+    }];
+    
+    
+//    dictionary keysSortedByValueUsingSelector:@selector(compare:)]
+    NSLog(@"-----%@,------%@---%@",myArray,sorted,sortedKeysArray);
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 //    [self creatMyNavgationbar];
-  
-    NSString *str = @"日常,天天,voa,一起,新东方,爽哥,懒人,有道,百度,流利说,华尔街,多说,能飞,少儿,在线,基础,英文,走遍,美国,出国,留学,学堂,学霸,背单词,学英语,同步,趣配音,宝典,词场,免费,软件";
-    [self saveprogress:str andName:@"newNce.json"];
+//    [self testSorts];
+//    return;
 
-     NSString *str1 = @"日常,天天,voa,一起,新东方,爽哥,懒人,有道,百度,流利说,华尔街,多说,能飞,少儿,在线,基础,英文,走遍,美国,出国,留学,学堂,学霸,背单词,学英语,同步,趣配音,宝典,词场,免费,软件";
-    [self saveprogress:str andName:@"nce1.json"];
+    NSString *str = @"每日,雅思,托福,考研,商务,高考,牛津,英孚,儿童,幼儿,懒人,沪江,有道,中英文,英汉,小学,初中,高中,大学,四六级,双语,词典,发音,音标,作业,美剧,大全,留学,达人,题库,词汇,旅行,听书,新东方,扇贝,星火,百度,51,流利说,多说,百词,叽哩呱啦,趣配音,爽哥,学霸,人人,少儿,开心,voa,bbc,ted,出国,在线,日常,基础,语言,教育,阅读,练习,宝典,软件,课堂,词场,学堂";
+    [self saveprogress:str andName:@"0802.json"];
+
+    NSString *str1 = @"每日,雅思,托福,考研,商务,高考,牛津,有道,金山,懒人,沪江,留学,儿童,幼儿,小学,初中,高中,大学,中英文,英汉,四六级,双语,词典,词汇,发音,音标,作业,美剧,大全,达人,题库,旅行,听书,新东方,星火,百度,51,流利说,多说,能飞,扇贝,趣配音,百词,叽哩呱啦,爽哥,天天,简单,voa,bbc,ted,出国,学霸,少儿,基础,语言,阅读,练习,宝典,软件,课堂,教育,词场,辞典,学堂";
     
+    [self saveprogress:str1 andName:@"0802NCEV.json"];
+    
+    NSMutableArray *nceArray = [[str componentsSeparatedByString:@","] mutableCopy];
+    NSMutableArray *nceVArray = [[str1 componentsSeparatedByString:@","] mutableCopy];
+    [nceArray removeObjectsInArray:nceVArray];
+    
+    NSMutableArray *nceArrayTwo = [[str componentsSeparatedByString:@","] mutableCopy];
+    NSMutableArray *nceVArrayTwo = [[str1 componentsSeparatedByString:@","] mutableCopy];
+    [nceVArrayTwo removeObjectsInArray:nceArrayTwo];
+    
+    NSLog(@"------%@----%@",nceArray,nceVArrayTwo);
 //    for (int i = 0; i<3 ; i++)
 //    {
 //        Gauge *myView = [[Gauge alloc]initWithFrame:CGRectMake(0, i*310+44, 300, 300)];

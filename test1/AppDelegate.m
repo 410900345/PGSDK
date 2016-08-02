@@ -33,18 +33,18 @@
 //    NSInteger todayOo = labs(today);
 //    NSLog(@"-----%ld",todayOo);
     
-    NSInteger cellNum = 5;
-    NSInteger wordCount = 2000;
-    NSMutableSet *idstrings = [[NSMutableSet alloc] init];
-    while (idstrings.count < cellNum)
-    {
-        NSInteger randomInt = arc4random() % wordCount;
-        [idstrings addObject:@(randomInt)];
-    }
-    NSArray *returnArray = [idstrings allObjects];
-    
-    NSString *idString = [returnArray componentsJoinedByString:@","];
-    NSLog(@"----%@------%@",idstrings),returnArray;
+//    NSInteger cellNum = 5;
+//    NSInteger wordCount = 2000;
+//    NSMutableSet *idstrings = [[NSMutableSet alloc] init];
+//    while (idstrings.count < cellNum)
+//    {
+//        NSInteger randomInt = arc4random() % wordCount;
+//        [idstrings addObject:@(randomInt)];
+//    }
+//    NSArray *returnArray = [idstrings allObjects];
+//    
+//    NSString *idString = [returnArray componentsJoinedByString:@","];
+//    NSLog(@"----%@------%@",idstrings),returnArray;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

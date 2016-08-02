@@ -37,6 +37,10 @@
 		75C34A511CC8FED7002330A9 /* IndexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C34A501CC8FED7002330A9 /* IndexVC.m */; };
 		75C34A551CC901F5002330A9 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C34A541CC901F5002330A9 /* CocoaSecurity.m */; };
 		75C34A591CC901FC002330A9 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C34A581CC901FC002330A9 /* Base64.m */; };
+		75C51BB31D5094A200A2B9EA /* 0802NCEV.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C51BB21D5094A200A2B9EA /* 0802NCEV.json */; };
+		75C51BB51D5094AA00A2B9EA /* 0802.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C51BB41D5094AA00A2B9EA /* 0802.json */; };
+		75C51BB81D5094C600A2B9EA /* 0802O.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C51BB71D5094C600A2B9EA /* 0802O.json */; };
+		75C51BBC1D50A44D00A2B9EA /* WordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C51BBB1D50A44D00A2B9EA /* WordModel.m */; };
 		75EE21241914B46F009FAC3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE21231914B46F009FAC3F /* Foundation.framework */; };
 		75EE21261914B46F009FAC3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE21251914B46F009FAC3F /* CoreGraphics.framework */; };
 		75EE21281914B46F009FAC3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE21271914B46F009FAC3F /* UIKit.framework */; };
@@ -68,13 +72,13 @@
 		750B1DA81BA342C300B6BE3B /* test1 copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test1 copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750B1DA91BA342C300B6BE3B /* test1 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test1 copy-Info.plist"; path = "/Users/yangshuo/Desktop/test1/test1 copy-Info.plist"; sourceTree = "<absolute>"; };
 		753E0CCA1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx"; sourceTree = "<group>"; };
-		755803F61D12CC460066336E /* newNce.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newNce.json; sourceTree = "<group>"; };
-		755803F81D12CFA30066336E /* nce1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = nce1.json; path = CocoaSecurity/nce1.json; sourceTree = "<group>"; };
+		755803F61D12CC460066336E /* newNce.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = newNce.json; path = ../newNce.json; sourceTree = "<group>"; };
+		755803F81D12CFA30066336E /* nce1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = nce1.json; path = ../CocoaSecurity/nce1.json; sourceTree = "<group>"; };
 		757F714B1CCB83FC006AE964 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		757F714D1CCB8407006AE964 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		757F71501CCB86A8006AE964 /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatch.framework; sourceTree = "<group>"; };
-		75A28D231A4C2EAC00939F10 /* CustomClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomClass.h; sourceTree = "<group>"; };
-		75A28D241A4C2EAC00939F10 /* CustomClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomClass.m; sourceTree = "<group>"; };
+		757F71501CCB86A8006AE964 /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSPatch.framework; path = ../JSPatch.framework; sourceTree = "<group>"; };
+		75A28D231A4C2EAC00939F10 /* CustomClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomClass.h; path = ../CustomClass.h; sourceTree = "<group>"; };
+		75A28D241A4C2EAC00939F10 /* CustomClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomClass.m; path = ../CustomClass.m; sourceTree = "<group>"; };
 		75A8762A1CFC7ED400CB876D /* MyBundleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBundleDetailViewController.h; sourceTree = "<group>"; };
 		75A8762B1CFC7ED400CB876D /* MyBundleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBundleDetailViewController.m; sourceTree = "<group>"; };
 		75A8762D1CFC7ED400CB876D /* Gauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gauge.h; sourceTree = "<group>"; };
@@ -84,12 +88,17 @@
 		75A876311CFC7ED400CB876D /* pointer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2.png; sourceTree = "<group>"; };
 		75BF72E01C55205200608FFC /* ybvam1.Mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ybvam1.Mp4; sourceTree = "<group>"; };
 		75BF72E31C55210C00608FFC /* ybvam11.env */ = {isa = PBXFileReference; lastKnownFileType = file; path = ybvam11.env; sourceTree = "<group>"; };
-		75C34A4F1CC8FED7002330A9 /* IndexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexVC.h; sourceTree = "<group>"; };
-		75C34A501CC8FED7002330A9 /* IndexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexVC.m; sourceTree = "<group>"; };
+		75C34A4F1CC8FED7002330A9 /* IndexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndexVC.h; path = ../IndexVC.h; sourceTree = "<group>"; };
+		75C34A501CC8FED7002330A9 /* IndexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndexVC.m; path = ../IndexVC.m; sourceTree = "<group>"; };
 		75C34A531CC901F5002330A9 /* CocoaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
 		75C34A541CC901F5002330A9 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
 		75C34A571CC901FC002330A9 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
 		75C34A581CC901FC002330A9 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		75C51BB21D5094A200A2B9EA /* 0802NCEV.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0802NCEV.json; sourceTree = "<group>"; };
+		75C51BB41D5094AA00A2B9EA /* 0802.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0802.json; sourceTree = "<group>"; };
+		75C51BB71D5094C600A2B9EA /* 0802O.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0802O.json; sourceTree = "<group>"; };
+		75C51BBA1D50A44D00A2B9EA /* WordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordModel.h; sourceTree = "<group>"; };
+		75C51BBB1D50A44D00A2B9EA /* WordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordModel.m; sourceTree = "<group>"; };
 		75EE21201914B46F009FAC3F /* test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75EE21231914B46F009FAC3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75EE21251914B46F009FAC3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,8 +115,8 @@
 		75EE21441914B46F009FAC3F /* test1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test1Tests-Info.plist"; sourceTree = "<group>"; };
 		75EE21461914B470009FAC3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75EE21481914B470009FAC3F /* test1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test1Tests.m; sourceTree = "<group>"; };
-		75EE21521914B4B2009FAC3F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		75EE21531914B4B2009FAC3F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		75EE21521914B4B2009FAC3F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		75EE21531914B4B2009FAC3F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
 		8361946A54E601D57FCC022E /* libPods-test1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A740CE9BF856254642EC704C /* Pods-test1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test1/Pods-test1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,10 +163,15 @@
 		75A876291CFC7ED400CB876D /* myBundle */ = {
 			isa = PBXGroup;
 			children = (
+				75C51BB61D5094B900A2B9EA /* NCEONLY */,
+				75C9C2E41D5030C900F336EF /* NCEVIPFile */,
+				75C9C2E31D5030BA00F336EF /* NCEFile */,
 				753E0CCA1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx */,
 				75A8762A1CFC7ED400CB876D /* MyBundleDetailViewController.h */,
 				75A8762B1CFC7ED400CB876D /* MyBundleDetailViewController.m */,
 				75A8762C1CFC7ED400CB876D /* pic */,
+				75C51BBA1D50A44D00A2B9EA /* WordModel.h */,
+				75C51BBB1D50A44D00A2B9EA /* WordModel.m */,
 			);
 			path = myBundle;
 			sourceTree = "<group>";
@@ -180,16 +194,61 @@
 				75C34A531CC901F5002330A9 /* CocoaSecurity.h */,
 				75C34A541CC901F5002330A9 /* CocoaSecurity.m */,
 			);
-			path = CocoaSecurity;
+			name = CocoaSecurity;
+			path = ../CocoaSecurity;
 			sourceTree = "<group>";
 		};
 		75C34A561CC901FC002330A9 /* Base64 */ = {
 			isa = PBXGroup;
 			children = (
+				75C34A521CC901F5002330A9 /* CocoaSecurity */,
+				757F71501CCB86A8006AE964 /* JSPatch.framework */,
 				75C34A571CC901FC002330A9 /* Base64.h */,
 				75C34A581CC901FC002330A9 /* Base64.m */,
 			);
 			path = Base64;
+			sourceTree = "<group>";
+		};
+		75C51BB61D5094B900A2B9EA /* NCEONLY */ = {
+			isa = PBXGroup;
+			children = (
+				75C51BB71D5094C600A2B9EA /* 0802O.json */,
+			);
+			name = NCEONLY;
+			path = ../NCEONLY;
+			sourceTree = "<group>";
+		};
+		75C51BB91D50951F00A2B9EA /* TestSDK */ = {
+			isa = PBXGroup;
+			children = (
+				75EE21521914B4B2009FAC3F /* MainViewController.h */,
+				75EE21531914B4B2009FAC3F /* MainViewController.m */,
+				75A28D231A4C2EAC00939F10 /* CustomClass.h */,
+				75A28D241A4C2EAC00939F10 /* CustomClass.m */,
+				75C34A4F1CC8FED7002330A9 /* IndexVC.h */,
+				75C34A501CC8FED7002330A9 /* IndexVC.m */,
+			);
+			path = TestSDK;
+			sourceTree = "<group>";
+		};
+		75C9C2E31D5030BA00F336EF /* NCEFile */ = {
+			isa = PBXGroup;
+			children = (
+				75C51BB41D5094AA00A2B9EA /* 0802.json */,
+				755803F81D12CFA30066336E /* nce1.json */,
+			);
+			name = NCEFile;
+			path = ../NCEFile;
+			sourceTree = "<group>";
+		};
+		75C9C2E41D5030C900F336EF /* NCEVIPFile */ = {
+			isa = PBXGroup;
+			children = (
+				75C51BB21D5094A200A2B9EA /* 0802NCEV.json */,
+				755803F61D12CC460066336E /* newNce.json */,
+			);
+			name = NCEVIPFile;
+			path = ../NCEVIPFile;
 			sourceTree = "<group>";
 		};
 		75EE21171914B46F009FAC3F = {
@@ -231,24 +290,13 @@
 		75EE21291914B46F009FAC3F /* test1 */ = {
 			isa = PBXGroup;
 			children = (
-				757F71501CCB86A8006AE964 /* JSPatch.framework */,
+				75EE212A1914B46F009FAC3F /* Supporting Files */,
+				75C51BB91D50951F00A2B9EA /* TestSDK */,
 				75C34A561CC901FC002330A9 /* Base64 */,
-				75C34A521CC901F5002330A9 /* CocoaSecurity */,
-				75BF72E01C55205200608FFC /* ybvam1.Mp4 */,
-				755803F81D12CFA30066336E /* nce1.json */,
-				755803F61D12CC460066336E /* newNce.json */,
 				75A876291CFC7ED400CB876D /* myBundle */,
-				75BF72E31C55210C00608FFC /* ybvam11.env */,
 				75EE21321914B46F009FAC3F /* AppDelegate.h */,
 				75EE21331914B46F009FAC3F /* AppDelegate.m */,
 				75EE21351914B46F009FAC3F /* Images.xcassets */,
-				75EE212A1914B46F009FAC3F /* Supporting Files */,
-				75EE21521914B4B2009FAC3F /* MainViewController.h */,
-				75EE21531914B4B2009FAC3F /* MainViewController.m */,
-				75A28D231A4C2EAC00939F10 /* CustomClass.h */,
-				75A28D241A4C2EAC00939F10 /* CustomClass.m */,
-				75C34A4F1CC8FED7002330A9 /* IndexVC.h */,
-				75C34A501CC8FED7002330A9 /* IndexVC.m */,
 			);
 			path = test1;
 			sourceTree = "<group>";
@@ -256,6 +304,8 @@
 		75EE212A1914B46F009FAC3F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				75BF72E31C55210C00608FFC /* ybvam11.env */,
+				75BF72E01C55205200608FFC /* ybvam1.Mp4 */,
 				75EE212B1914B46F009FAC3F /* test1-Info.plist */,
 				75EE212C1914B46F009FAC3F /* InfoPlist.strings */,
 				75EE212F1914B46F009FAC3F /* main.m */,
@@ -403,13 +453,16 @@
 			files = (
 				755803F91D12CFA30066336E /* nce1.json in Resources */,
 				753E0CCB1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx in Resources */,
+				75C51BB81D5094C600A2B9EA /* 0802O.json in Resources */,
 				75EE212E1914B46F009FAC3F /* InfoPlist.strings in Resources */,
+				75C51BB51D5094AA00A2B9EA /* 0802.json in Resources */,
 				75A876361CFC7ED400CB876D /* pointer2.png in Resources */,
 				75EE21361914B46F009FAC3F /* Images.xcassets in Resources */,
 				755803F71D12CC460066336E /* newNce.json in Resources */,
 				75BF72E11C55205200608FFC /* ybvam1.Mp4 in Resources */,
 				75A876351CFC7ED400CB876D /* pointer1.png in Resources */,
 				75BF72E41C55210C00608FFC /* ybvam11.env in Resources */,
+				75C51BB31D5094A200A2B9EA /* 0802NCEV.json in Resources */,
 				75A876341CFC7ED400CB876D /* pointer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +574,7 @@
 				75C34A591CC901FC002330A9 /* Base64.m in Sources */,
 				75EE21341914B46F009FAC3F /* AppDelegate.m in Sources */,
 				75A28D251A4C2EAC00939F10 /* CustomClass.m in Sources */,
+				75C51BBC1D50A44D00A2B9EA /* WordModel.m in Sources */,
 				75A876321CFC7ED400CB876D /* MyBundleDetailViewController.m in Sources */,
 				75C34A551CC901F5002330A9 /* CocoaSecurity.m in Sources */,
 				75C34A511CC8FED7002330A9 /* IndexVC.m in Sources */,
