@@ -183,6 +183,7 @@
 
     NSString *str1 = @"每日,雅思,托福,考研,商务,高考,牛津,有道,金山,懒人,沪江,留学,儿童,幼儿,小学,初中,高中,大学,中英文,英汉,四六级,双语,词典,词汇,发音,音标,作业,美剧,大全,达人,题库,旅行,听书,新东方,星火,百度,51,流利说,多说,能飞,扇贝,趣配音,百词,叽哩呱啦,爽哥,天天,简单,voa,bbc,ted,出国,学霸,少儿,基础,语言,阅读,练习,宝典,软件,课堂,教育,词场,辞典,学堂";
     
+//    考试
     [self saveprogress:str1 andName:@"0802NCEV.json"];
     
     NSMutableArray *nceArray = [[str componentsSeparatedByString:@","] mutableCopy];
