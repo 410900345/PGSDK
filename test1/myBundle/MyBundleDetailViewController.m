@@ -78,12 +78,15 @@
         NSInteger starIndex = [strIndex integerValue];
          NSUInteger strStar = [dict[2] integerValue];
         
+        
         for (NSString *subStr in arryKyword) {
             if ([str containsString:subStr]){
                 WordModel *model = wordDict[subStr];
                 NSInteger num = [model.wordCount integerValue];
-                num ++;
-                model.wordCount = @(num);
+                if (strStar >= 4605) {
+                     num ++;
+                     model.wordCount = @(num);
+                }
                 if (starIndex <= 10 && strStar >= 4605) {
                     NSInteger numStar = [model.wordStarCount integerValue];
                     numStar ++;
@@ -171,38 +174,50 @@
     NSLog(@"-----%@,------%@---%@",myArray,sorted,sortedKeysArray);
 }
 
+
+- (NSArray *)nceEnglish {
+    NSString *str = @"每日,雅思,托福,考研,商务,高考,牛津,英孚,儿童,幼儿,懒人,沪江,有道,中英文,英汉,小学,初中,高中,大学,四六级,双语,词典,发音,音标,作业,美剧,大全,留学,达人,题库,词汇,旅行,听书,新东方,扇贝,星火,百度,51,流利说,多说,百词,叽哩呱啦,趣配音,爽哥,学霸,人人,少儿,开心,voa,bbc,ted,出国,在线,日常,基础,语言,教育,阅读,练习,宝典,软件,课堂,词场,学堂";
+    [self saveprogress:str andName:@"0802.json"];
+    NSArray *nceArray = [str componentsSeparatedByString:@","];
+    return nceArray;
+}
+
+- (NSArray *)nceEnglishV {
+    NSString *str1 = @"每日,雅思,托福,考研,商务,高考,牛津,有道,金山,懒人,沪江,留学,儿童,幼儿,小学,初中,高中,大学,中英文,英汉,四六级,双语,词典,词汇,发音,音标,作业,美剧,大全,达人,题库,旅行,听书,新东方,星火,百度,51,流利说,多说,能飞,扇贝,趣配音,百词,叽哩呱啦,爽哥,天天,简单,voa,bbc,ted,出国,学霸,少儿,基础,语言,阅读,练习,宝典,软件,课堂,教育,词场,辞典,学堂";
+    //    考试
+    [self saveprogress:str1 andName:@"0802NCEV.json"];
+    NSArray *nceVArray = [str1 componentsSeparatedByString:@","];
+    return nceVArray;
+}
+
+- (NSArray *)nceEnglishO {
+    NSString *strNCE = @"每日,省心,四级,六级,高考,考研,中英,雅思,托福,沪江,扇贝,牛津,英孚,小猿,商务,英汉,小学,初中,高中,大学,bbc,自学,英语,词典,发音,音标,作业,美剧,大全,题库,旅行,听书,课文,日常,天天,voa,一起,新东方,爽哥,懒人,有道,百度,流利说,华尔街,多说,能飞,少儿,在线,基础,英文,走遍,美国,出国,留学,学堂,学霸,背单词,学英语,同步,趣配音,宝典,词场,免费,软件";
+    [self saveprogress:strNCE andName:@"0803.json"];
+    NSArray *nceVArray = [strNCE componentsSeparatedByString:@","] ;
+    return nceVArray;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    [self creatMyNavgationbar];
-//    [self testSorts];
-//    return;
 
-    NSString *str = @"每日,雅思,托福,考研,商务,高考,牛津,英孚,儿童,幼儿,懒人,沪江,有道,中英文,英汉,小学,初中,高中,大学,四六级,双语,词典,发音,音标,作业,美剧,大全,留学,达人,题库,词汇,旅行,听书,新东方,扇贝,星火,百度,51,流利说,多说,百词,叽哩呱啦,趣配音,爽哥,学霸,人人,少儿,开心,voa,bbc,ted,出国,在线,日常,基础,语言,教育,阅读,练习,宝典,软件,课堂,词场,学堂";
-//    [self saveprogress:str andName:@"0802.json"];
-
-    NSString *str1 = @"每日,雅思,托福,考研,商务,高考,牛津,有道,金山,懒人,沪江,留学,儿童,幼儿,小学,初中,高中,大学,中英文,英汉,四六级,双语,词典,词汇,发音,音标,作业,美剧,大全,达人,题库,旅行,听书,新东方,星火,百度,51,流利说,多说,能飞,扇贝,趣配音,百词,叽哩呱啦,爽哥,天天,简单,voa,bbc,ted,出国,学霸,少儿,基础,语言,阅读,练习,宝典,软件,课堂,教育,词场,辞典,学堂";
+    NSArray *nceArrayOrigle = [self nceEnglish];
+    NSArray *nceVArrayOrigle = [self nceEnglishV];
+    NSArray *nceOArrayOrigle = [self nceEnglishO];
     
-//    考试
-//    [self saveprogress:str1 andName:@"0802NCEV.json"];
+    NSMutableArray *nceArray = [nceArrayOrigle mutableCopy];
+    NSMutableArray *nceVArray = [nceVArrayOrigle mutableCopy];
+    NSMutableArray *nceOArray = [nceOArrayOrigle mutableCopy];
+//nce 独有
+    [nceArray removeObjectsInArray:nceVArray];
+    [nceOArray removeObjectsInArray:nceVArray];
     
-    NSMutableArray *nceArray = [[str componentsSeparatedByString:@","] mutableCopy];
-    NSMutableArray *nceVArray = [[str1 componentsSeparatedByString:@","] mutableCopy];
-//    [nceArray removeObjectsInArray:nceVArray];
-//    
-//    NSMutableArray *nceArrayTwo = [[str componentsSeparatedByString:@","] mutableCopy];
-//    NSMutableArray *nceVArrayTwo = [[str1 componentsSeparatedByString:@","] mutableCopy];
-//    [nceVArrayTwo removeObjectsInArray:nceArrayTwo];
+//    NSMutableArray *nceOArray = [[str componentsSeparatedByString:@","] mutableCopy];
+//    NSMutableArray *nceOArrayOne = [[str1 componentsSeparatedByString:@","] mutableCopy];
+//    [nceArray removeObjectsInArray:nceOArray];
+//    [nceVArray removeObjectsInArray:nceOArray];
     
-    NSString *strNCE = @"每日,省心,四级,六级,高考,考研,中英,雅思,托福,沪江,扇贝,牛津,英孚,小猿,商务,英汉,小学,初中,高中,大学,bbc,自学,英语,词典,发音,音标,作业,美剧,大全,题库,旅行,听书,课文,日常,天天,voa,一起,新东方,爽哥,懒人,有道,百度,流利说,华尔街,多说,能飞,少儿,在线,基础,英文,走遍,美国,出国,留学,学堂,学霸,背单词,学英语,同步,趣配音,宝典,词场,免费,软件";
-      [self saveprogress:strNCE andName:@"0803.json"];
-    
-    NSMutableArray *nceOArray = [[str componentsSeparatedByString:@","] mutableCopy];
-    NSMutableArray *nceOArrayOne = [[str1 componentsSeparatedByString:@","] mutableCopy];
-    [nceArray removeObjectsInArray:nceOArray];
-    [nceVArray removeObjectsInArray:nceOArray];
-    
-    NSLog(@"------%@----%@",nceArray,nceOArrayOne);
+    NSLog(@"------%@----%@",nceArray,nceOArray);
 
 }
 -(void)creatMyNavgationbar
