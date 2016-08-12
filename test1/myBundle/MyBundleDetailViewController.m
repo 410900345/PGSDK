@@ -123,11 +123,9 @@
         [numArrayStar addObject:model.wordStarCount];
         //      NSLog(@"-----%@-----%ld ",subStr,num);
     }
-//    NSLog(@"-----%@ ",arryKyword);
-    NSLog(@"-----%@- ",numArray);
-//     NSLog(@"-----%@- ",sortArry);
-     NSLog(@"-----%@- ",myArray);
-     NSLog(@"-----%@- ",numArrayStar);
+     NSLog(@"所有关键词-----%@- ",myArray);
+     NSLog(@"有效关键词覆盖数-----%@- ",numArray);
+     NSLog(@"前10关键词-----%@- ",numArrayStar);
 }
 
 - (void)testSorts {
@@ -176,23 +174,25 @@
 
 
 - (NSArray *)nceEnglish {
-    NSString *str = @"每日,雅思,托福,考研,商务,高考,牛津,英孚,儿童,幼儿,懒人,沪江,有道,中英文,英汉,小学,初中,高中,大学,四六级,双语,词典,发音,音标,作业,美剧,大全,留学,达人,题库,词汇,旅行,听书,新东方,扇贝,星火,百度,51,流利说,多说,百词,叽哩呱啦,趣配音,爽哥,学霸,人人,少儿,开心,voa,bbc,ted,出国,在线,日常,基础,语言,教育,阅读,练习,宝典,软件,课堂,词场,学堂";
-    [self saveprogress:str andName:@"0802.json"];
+    
+    NSString *str = @"每日,雅思,托福,考研,商务,高考,牛津,儿童,幼儿,懒人,沪江,有道,中英文,英汉,小学,初中,高中,大学,四六级,美剧,发音,音标,留学,题库,词典,旅行,听书,作业,攻略,视频,直播,大全,达人,新东方,扇贝,星火,百度,51,能飞,欧洲,叽哩呱啦,宝宝,趣配音,英孚,少儿,人人,日常,常用,开心,在线,voa,bbc,出国,基础,语言,教育,新闻,阅读,练习,宝典,课堂,词场,学霸,软件,大师";
+    
+    [self saveprogress:str andName:@"0812.json"];
     NSArray *nceArray = [str componentsSeparatedByString:@","];
     return nceArray;
 }
 
 - (NSArray *)nceEnglishV {
-    NSString *str1 = @"每日,雅思,托福,考研,商务,高考,牛津,有道,金山,懒人,沪江,留学,儿童,幼儿,小学,初中,高中,大学,中英文,英汉,四六级,双语,词典,词汇,发音,音标,作业,美剧,大全,达人,题库,旅行,听书,新东方,星火,百度,51,流利说,多说,能飞,扇贝,趣配音,百词,叽哩呱啦,爽哥,天天,简单,voa,bbc,ted,出国,学霸,少儿,基础,语言,阅读,练习,宝典,软件,课堂,教育,词场,辞典,学堂";
+    NSString *str1 = @"每日,雅思,托福,考研,商务,高考,牛津,有道,懒人,留学,儿童,幼儿,小学,初中,高中,大学,中文,英文,英汉,四级,六级,词典,发音,音标,作业,考试,美剧,大全,达人,题库,旅行,听书,视频,攻略,新东方,星火,金山,百度,51,欧洲,能飞,扇贝,趣配音,沪江,叽哩呱啦,天天,简单,voa,bbc,ted,出国,学霸,少儿,常用,语音,同步,基础,语言,阅读,练习,宝典,软件,课堂,教育,词场";
     //    考试
-    [self saveprogress:str1 andName:@"0802NCEV.json"];
+    [self saveprogress:str1 andName:@"0812V.json"];
     NSArray *nceVArray = [str1 componentsSeparatedByString:@","];
     return nceVArray;
 }
 
 - (NSArray *)nceEnglishO {
-    NSString *strNCE = @"每日,省心,四级,六级,高考,考研,中英,雅思,托福,沪江,扇贝,牛津,英孚,小猿,商务,英汉,小学,初中,高中,大学,bbc,自学,英语,词典,发音,音标,作业,美剧,大全,题库,旅行,听书,课文,日常,天天,voa,一起,新东方,爽哥,懒人,有道,百度,流利说,华尔街,多说,能飞,少儿,在线,基础,英文,走遍,美国,出国,留学,学堂,学霸,背单词,学英语,同步,趣配音,宝典,词场,免费,软件";
-    [self saveprogress:strNCE andName:@"0803.json"];
+    NSString *strNCE = @"每日,雅思,托福,考研,金山,商务,高考,牛津,有道,英孚,懒人,留学,儿童,幼儿,小学,初中,高中,大学,中英文,英汉,四级,六级,词典,发音,音标,作业,美剧,大全,题库,旅行,听书,攻略,视频,新东方,扇贝,星火,百度,51,沪江,欧洲,叽哩呱啦,趣配音,人人,日常,常用,少儿,开心,voa,bbc,ted,出国,在线,基础,双语,语音,语言,教育,阅读,练习,宝典,软件,课堂,词场,学霸";
+    [self saveprogress:strNCE andName:@"0812O.json"];
     NSArray *nceVArray = [strNCE componentsSeparatedByString:@","] ;
     return nceVArray;
 }

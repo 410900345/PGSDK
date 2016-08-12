@@ -20,6 +20,9 @@
 		7527D1731D521EC7000CFDC6 /* 0803.json in Resources */ = {isa = PBXBuildFile; fileRef = 7527D1721D521EC7000CFDC6 /* 0803.json */; };
 		753E0CCB1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx in Resources */ = {isa = PBXBuildFile; fileRef = 753E0CCA1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx */; };
 		753E0CCC1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx in Resources */ = {isa = PBXBuildFile; fileRef = 753E0CCA1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx */; };
+		7556C1711D5D70C50012BAB1 /* 0812O.json in Resources */ = {isa = PBXBuildFile; fileRef = 7556C1701D5D70C50012BAB1 /* 0812O.json */; };
+		7556C1731D5D70CD0012BAB1 /* 0812.json in Resources */ = {isa = PBXBuildFile; fileRef = 7556C1721D5D70CD0012BAB1 /* 0812.json */; };
+		7556C1751D5D70D30012BAB1 /* 0812V.json in Resources */ = {isa = PBXBuildFile; fileRef = 7556C1741D5D70D30012BAB1 /* 0812V.json */; };
 		755803F71D12CC460066336E /* newNce.json in Resources */ = {isa = PBXBuildFile; fileRef = 755803F61D12CC460066336E /* newNce.json */; };
 		755803F91D12CFA30066336E /* nce1.json in Resources */ = {isa = PBXBuildFile; fileRef = 755803F81D12CFA30066336E /* nce1.json */; };
 		757F714C1CCB83FC006AE964 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757F714B1CCB83FC006AE964 /* JavaScriptCore.framework */; };
@@ -74,6 +77,9 @@
 		750B1DA91BA342C300B6BE3B /* test1 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test1 copy-Info.plist"; path = "/Users/yangshuo/Desktop/test1/test1 copy-Info.plist"; sourceTree = "<absolute>"; };
 		7527D1721D521EC7000CFDC6 /* 0803.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0803.json; sourceTree = "<group>"; };
 		753E0CCA1D4509FA00BF81DA /* 省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "省心关键字(USER-20141129BV--Administrator--2016-04-24-16,29,18)(USER-20141129BV--Administrator--2016-04-24-18,30,05).xlsx"; sourceTree = "<group>"; };
+		7556C1701D5D70C50012BAB1 /* 0812O.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0812O.json; sourceTree = "<group>"; };
+		7556C1721D5D70CD0012BAB1 /* 0812.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0812.json; sourceTree = "<group>"; };
+		7556C1741D5D70D30012BAB1 /* 0812V.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0812V.json; sourceTree = "<group>"; };
 		755803F61D12CC460066336E /* newNce.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = newNce.json; path = ../newNce.json; sourceTree = "<group>"; };
 		755803F81D12CFA30066336E /* nce1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = nce1.json; path = ../CocoaSecurity/nce1.json; sourceTree = "<group>"; };
 		757F714B1CCB83FC006AE964 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -214,6 +220,7 @@
 		75C51BB61D5094B900A2B9EA /* NCEONLY */ = {
 			isa = PBXGroup;
 			children = (
+				7556C1701D5D70C50012BAB1 /* 0812O.json */,
 				7527D1721D521EC7000CFDC6 /* 0803.json */,
 				75C51BB71D5094C600A2B9EA /* 0802O.json */,
 			);
@@ -237,6 +244,7 @@
 		75C9C2E31D5030BA00F336EF /* NCEFile */ = {
 			isa = PBXGroup;
 			children = (
+				7556C1721D5D70CD0012BAB1 /* 0812.json */,
 				75C51BB41D5094AA00A2B9EA /* 0802.json */,
 				755803F81D12CFA30066336E /* nce1.json */,
 			);
@@ -247,6 +255,7 @@
 		75C9C2E41D5030C900F336EF /* NCEVIPFile */ = {
 			isa = PBXGroup;
 			children = (
+				7556C1741D5D70D30012BAB1 /* 0812V.json */,
 				75C51BB21D5094A200A2B9EA /* 0802NCEV.json */,
 				755803F61D12CC460066336E /* newNce.json */,
 			);
@@ -464,8 +473,11 @@
 				75EE21361914B46F009FAC3F /* Images.xcassets in Resources */,
 				755803F71D12CC460066336E /* newNce.json in Resources */,
 				75BF72E11C55205200608FFC /* ybvam1.Mp4 in Resources */,
+				7556C1751D5D70D30012BAB1 /* 0812V.json in Resources */,
 				75A876351CFC7ED400CB876D /* pointer1.png in Resources */,
 				75BF72E41C55210C00608FFC /* ybvam11.env in Resources */,
+				7556C1731D5D70CD0012BAB1 /* 0812.json in Resources */,
+				7556C1711D5D70C50012BAB1 /* 0812O.json in Resources */,
 				75C51BB31D5094A200A2B9EA /* 0802NCEV.json in Resources */,
 				75A876341CFC7ED400CB876D /* pointer.png in Resources */,
 			);
