@@ -24,13 +24,25 @@ PODS:
   - Qiniu (7.0.12):
     - AFNetworking (~> 2.0)
     - HappyDNS (~> 0.1)
+  - SSCategoriesSDK (0.3.1):
+    - SSCategoriesSDK/SSFoundation (= 0.3.1)
+    - SSCategoriesSDK/SSTools (= 0.3.1)
+    - SSCategoriesSDK/SSUIKit (= 0.3.1)
+  - SSCategoriesSDK/SSFoundation (0.3.1):
+    - SSCategoriesSDK/SSUIKit
+  - SSCategoriesSDK/SSTools (0.3.1)
+  - SSCategoriesSDK/SSUIKit (0.3.1)
 
 DEPENDENCIES:
   - Qiniu (~> 7.0)
+  - SSCategoriesSDK
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   HappyDNS: 8eb3c929ee6143eb56bfddfc9e6052ca9429699c
   Qiniu: 1fb5191b3bc1edb65b2da3d905b8281e15bd1d5c
+  SSCategoriesSDK: 61a521e337070581349cec4ba5618e90109346d7
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: f434545a15ed8a51cf35b54397f2879efbc621e9
+
+COCOAPODS: 1.0.1

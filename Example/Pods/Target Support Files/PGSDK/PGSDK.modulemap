@@ -1,6 +1,0 @@
-framework module PGSDK {
-  umbrella header "PGSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}
