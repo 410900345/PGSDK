@@ -26,7 +26,6 @@
 		75A876361CFC7ED400CB876D /* pointer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A876311CFC7ED400CB876D /* pointer2.png */; };
 		75BF72E11C55205200608FFC /* ybvam1.Mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 75BF72E01C55205200608FFC /* ybvam1.Mp4 */; };
 		75BF72E41C55210C00608FFC /* ybvam11.env in Resources */ = {isa = PBXBuildFile; fileRef = 75BF72E31C55210C00608FFC /* ybvam11.env */; };
-		75C34A511CC8FED7002330A9 /* IndexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C34A501CC8FED7002330A9 /* IndexVC.m */; };
 		75C34A551CC901F5002330A9 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C34A541CC901F5002330A9 /* CocoaSecurity.m */; };
 		75C34A591CC901FC002330A9 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C34A581CC901FC002330A9 /* Base64.m */; };
 		75C51BB31D5094A200A2B9EA /* 0802NCEV.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C51BB21D5094A200A2B9EA /* 0802NCEV.json */; };
@@ -81,8 +80,6 @@
 		75A876311CFC7ED400CB876D /* pointer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2.png; sourceTree = "<group>"; };
 		75BF72E01C55205200608FFC /* ybvam1.Mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ybvam1.Mp4; sourceTree = "<group>"; };
 		75BF72E31C55210C00608FFC /* ybvam11.env */ = {isa = PBXFileReference; lastKnownFileType = file; path = ybvam11.env; sourceTree = "<group>"; };
-		75C34A4F1CC8FED7002330A9 /* IndexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndexVC.h; path = ../IndexVC.h; sourceTree = "<group>"; };
-		75C34A501CC8FED7002330A9 /* IndexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndexVC.m; path = ../IndexVC.m; sourceTree = "<group>"; };
 		75C34A531CC901F5002330A9 /* CocoaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
 		75C34A541CC901F5002330A9 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
 		75C34A571CC901FC002330A9 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
@@ -218,8 +215,6 @@
 				75EE21531914B4B2009FAC3F /* MainViewController.m */,
 				75A28D231A4C2EAC00939F10 /* CustomClass.h */,
 				75A28D241A4C2EAC00939F10 /* CustomClass.m */,
-				75C34A4F1CC8FED7002330A9 /* IndexVC.h */,
-				75C34A501CC8FED7002330A9 /* IndexVC.m */,
 			);
 			path = TestSDK;
 			sourceTree = "<group>";
@@ -492,7 +487,6 @@
 				75C51BBC1D50A44D00A2B9EA /* WordModel.m in Sources */,
 				75A876321CFC7ED400CB876D /* MyBundleDetailViewController.m in Sources */,
 				75C34A551CC901F5002330A9 /* CocoaSecurity.m in Sources */,
-				75C34A511CC8FED7002330A9 /* IndexVC.m in Sources */,
 				75A876331CFC7ED400CB876D /* Gauge.m in Sources */,
 				75EE21541914B4B2009FAC3F /* MainViewController.m in Sources */,
 				75EE21301914B46F009FAC3F /* main.m in Sources */,
@@ -621,6 +615,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "test1/test1-Prefix.pch";
 				INFOPLIST_FILE = "test1/test1-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -640,6 +635,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "test1/test1-Prefix.pch";
 				INFOPLIST_FILE = "test1/test1-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

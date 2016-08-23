@@ -6,5 +6,6 @@ platform :ios ,'7.0'
 target :test1 do
 pod 'Qiniu', '~> 7.0'
 pod 'SSCategoriesSDK'
+pod 'PGSCommonSDK'
 
 end

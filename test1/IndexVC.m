@@ -10,8 +10,8 @@
 #import <CommonCrypto/CommonHMAC.h>
 #import <CommonCrypto/CommonCryptor.h>
 //#import "GTMBase64.h"
-#import "QNUrlSafeBase64.h"
-#import "CocoaSecurity.h"
+//#import "QNUrlSafeBase64.h"
+//#import "CocoaSecurity.h"
 
 @interface IndexVC ()
 
