@@ -22,6 +22,10 @@
     UINavigationController *nav= [[UINavigationController alloc]initWithRootViewController:mvc];
     self.window.rootViewController =nav;
     
+    NSString *str = @"{\"pid\":\"5\",\"pt\":\"4\"}";
+    NSLog(@"------%@",str);
+    
+    
 //    [JSPatch startWithAppKey:@"64d67fd83adf60e8"];
 //    [JSPatch sync];
 //    [JSPatch setLogger:^(NSString *msg) {
