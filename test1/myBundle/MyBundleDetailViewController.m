@@ -10,7 +10,12 @@
 #import "Gauge.h"
 #import "WordModel.h"
 
+#define MAS_SHORTHAND
 
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
 
 @interface MyBundleDetailViewController ()
 
@@ -126,6 +131,33 @@
      NSLog(@"所有关键词-----%@- ",myArray);
      NSLog(@"有效关键词覆盖数-----%@- ",numArray);
      NSLog(@"前10关键词-----%@- ",numArrayStar);
+    
+    
+    UIView *greenView1 = UIView.new;
+    greenView1.backgroundColor = UIColor.greenColor;
+    greenView1.layer.borderColor = UIColor.blackColor.CGColor;
+    greenView1.layer.borderWidth = 2;
+    [self.view addSubview:greenView1];
+    
+    UIView *greenView = UIView.new;
+    greenView.backgroundColor = UIColor.greenColor;
+    greenView.layer.borderColor = UIColor.blackColor.CGColor;
+    greenView.layer.borderWidth = 2;
+    [greenView1 addSubview:greenView];
+    
+     int padding = 10;
+    
+    [greenView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.greaterThanOrEqualTo(superview.top).offset(padding);
+        make.left.equalTo(self.view.left).offset(padding);
+        make.bottom.equalTo(self.view.top).offset(-padding);
+        make.right.equalTo(self.view.left).offset(-padding);
+        make.width.equalTo(self.view.width);
+        
+        make.height.equalTo(self.view.height);
+        make.height.equalTo(self.view.height);
+        
+    }];
 }
 
 - (void)testSorts {
